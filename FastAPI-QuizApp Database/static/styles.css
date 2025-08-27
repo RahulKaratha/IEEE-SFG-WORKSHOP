@@ -1,0 +1,127 @@
+/* Revamped Global Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 40px;
+  background-color: #f0f2f5; /* Softer background color */
+  color: #333;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  color: #2c3e50;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #2980b9; /* A slightly richer blue */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  margin-right: 15px;
+}
+
+a:hover {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 800px; /* Slightly wider container for more space */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Card-like form and display sections */
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* More subtle, layered shadow */
+  max-width: 650px;
+  margin: 20px auto;
+  border: 1px solid #e0e0e0; /* A thin border for definition */
+}
+
+label {
+  font-weight: 600;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 20px 0;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2); /* A focus ring for accessibility */
+}
+
+button {
+  background-color: #27ae60; /* A darker, more professional green */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #2ecc71;
+  transform: translateY(-2px); /* A subtle lift effect on hover */
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+#choices .choice {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+#questionDisplay,
+#choicesDisplay {
+  margin-top: 25px;
+}
+
+ul {
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+ul li::before {
+  content: "✨";
+  position: absolute;
+  left: 0;
+  color: #2980b9;
+}
