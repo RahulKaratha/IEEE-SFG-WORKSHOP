@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Update Question</title>
+    <script src="/static/app.js" defer></script>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <h1>Update Question</h1>
+    <label>Question ID: <input type="number" id="update_id" required /></label
+    ><br /><br />
+    <label
+      >New Question Text:
+      <input type="text" id="update_question_text" required /></label
+    ><br /><br />
+    <div id="update_choices">
+      <div class="choice">
+        <input
+          type="text"
+          class="update_choice_text"
+          placeholder="Choice text"
+          required
+        />
+        <label
+          ><input type="checkbox" class="update_is_correct" /> Correct</label
+        >
+      </div>
+    </div>
+    <button type="button" onclick="addChoice()">Add Choice</button><br /><br />
+    <button type="button" onclick="updateQuestion()">Update Question</button>
+    <p id="updateResult"></p>
+  </body>
+</html>
